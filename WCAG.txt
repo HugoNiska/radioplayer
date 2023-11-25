@@ -1,0 +1,134 @@
+[Do this tutorial](https://www.w3schools.com/accessibility/)
+
+Give answers in swedish to the following questions in a text-file in your repo:
+
+1. Explain the importance of semantic elements in web development according to accessibility guidelines. Provide examples of at least two semantic HTML elements and clarify how they enhance accessibility for users with disabilities.
+
+Dessa är taggar med viktig betydelse. De ger en betydelse på innehållet i koden. 
+
+<nav>-elementet:
+
+Syfte: Definierar navigeringsfält eller menyer.
+Tillgänglighet: Gör det möjligt för skärmläsare att identifiera och navigera direkt till menyn, vilket förbättrar effektiviteten för användare med funktionsnedsättningar.
+
+<figure>- och <figcaption>-elementen:
+
+Syfte: <figure> sluter media, <figcaption> ger bildtexter/captions.
+Tillgänglighet: captions hjälper användare med synnedsättningar genom att ge kontext till bilder när de läses upp av skärmläsare.
+
+2. Describe the significance of color contrast in web design concerning accessibility. How does adhering to color contrast guidelines benefit users with visual impairments, and what are the recommended contrast ratios as per WCAG standards?
+
+Hög kontrast i webdesign ökar läsbarheten och tydligheten av text och grafik. Det gynnar användare med sämre syn och färgblindhet genom att göra innehållet lättare att uppfatta.
+
+Fördelar för användare:
+
+dålig syn:
+Hög kontrast underlättar läsning och navigering.
+Färgblindhet:
+Kontrast säkerställer tydlig information även för färgblinda användare.
+
+Rekommenderade kontrastförhållanden (WCAG 2.0):
+
+Normal text:
+Minst 4,5 kontrastförhållande.
+
+Stor text (18 pt eller 14 pt fet och större):
+Minst 3:1 
+
+Grafik och gränssnittskomponenter:
+Minst 3:1
+
+Att följa dessa riktlinjer säkerställer tillgängligt webbinnehåll och förbättrar den övergripande användarupplevelsen för alla användare.
+
+
+3. Discuss the role of alternative text (alt text) for images in accordance with accessibility guidelines. Why is it crucial to include descriptive alt text, and how does this contribute to making web content more accessible? Provide examples to illustrate your explanation.
+
+Vikten av Alt-text:
+
+Tillgänglighet: Alt-text är avgörande för att göra webbinnehåll tillgängligt, särskilt för användare med synnedsättningar.
+Skärmläsarinterpretation: Alt-text läses av skärmläsare och ger användare utan synförmåga en förståelse för bildinnehållet.
+
+Inklusiv Upplevelse:
+Beskrivande alt-text inkluderar användare med synnedsättningar och ger dem samma information som synliga användare.
+Navigering och Förståelse:
+Underlättar navigering och förståelse för skärmläsar-användare genom att förklara bilder.
+Sammanhangsinformation:
+Alt-text är viktigt för att förmedla information från diagram och bilder som är nödvändiga för förståelsen.
+
+Exempel:
+
+Enkel Bild:
+<img src="example.jpg" alt="En hund leker med en boll">
+
+Komplex Bild eller Diagram:
+<img src="chart.png" alt="Kvartalsvis försäljningsdiagram med tillväxt i Q1 samt Q2, nedgång i Q3 och ökning i Q4">
+
+Dekorativ Bild:
+<img src="decorative.jpg" alt="" aria-hidden="true">
+
+För dekorativa bilder som inte förmedlar information lämnas alt-texten tom och aria-hidden används för att indikera att bilden kan ignoreras.
+Inkludering av beskrivande alt-text är grundläggande för webbtillgänglighet och gör innehållet begripligt för alla användare oavsett synförmåga.
+
+
+
+4. Explain the purpose of landmarks in creating accessible web content. How do landmarks aid in navigation for users of assistive technologies, and can you provide examples of commonly used landmark elements in HTML?
+
+1. Underlätta Navigation:
+Landmärken fungerar som "vägskyltar" som i sin tur hjälper användare, särskilt de med funktionsvariationer, att effektivt navigera på webbsidor.
+
+2. Förbättra Användarupplevelsen:
+Ger en tydlig och organiserad struktur, vilket gör det lättare för användare att förstå och navigera på webbsidan.
+
+3. Tillgänglighet för Skärmläsar-Användare:
+Fungerar som genvägar för användare med skärmläsare, låter dem hoppa direkt till specifika sektioner.
+
+Exempel på Landmärken i HTML:
+
+1. Header (<header>)
+
+2. Navigation (<nav>)
+
+3. Huvudinnehåll (<main>)
+
+4. Åtskillande innehåll (<aside>)
+
+5. Sidfot (<footer>)
+
+6. Formulär (<form>)
+
+Hur Landmärken Underlättar Navigation:
+Skärmläsare ger en lista över landmärken, låter användare hoppa direkt till önskad sektion.
+Att inkludera dessa landmärkeselement i HTML förbättrar tillgängligheten och skapar en mer organiserad webbstruktur för alla användare.
+
+
+5. Describe the significance of proper form labeling. Why is it important to label form elements, and what strategies can developers implement to ensure effective labeling for improved accessibility?
+
+1. Tillgänglighet för alla användare:
+Korrekt märkning av formulär är nödvändigt för att göra dem tillgängliga för alla användare, inklusive de med syn- eller kognitiva funktionsvariationer.
+
+2. Tydlig förståelse:
+Etiketter hjälper användare att förstå syftet och förväntad input för varje fält.
+
+3. Effektiv navigation:
+Välmärkta formulär ger snabb och effektiv navigation, vilket gynnar användare med olika hjälpmedel.
+
+4. Förebyggande:
+Tydliga etiketter minskar risken för felinmatning och hjälper användare att korrekt identifiera vilken information som krävs.
+
+Effektiva strategier:
+
+1. Använd <label>-elementet:
+Koppla varje formulärfält till ett <label>-element för klarhet och tillgänglighet.
+
+2. Beskrivande text:
+Använd tydlig och beskrivande text för att underlätta förståelsen av varje fält.
+
+3. Komplettera med Placeholder-text:
+Använd placeholder-text som ett komplement, men förlita dig inte enbart på den.
+<input type="text" id="fulltnamn" name="fulltnamn" placeholder="Fullständigt Namn">
+
+4. Testa med Hjälpmedel:
+Testa formulär med skärmläsare för att identifiera och åtgärda tillgänglighetsproblem.
+
+
+
